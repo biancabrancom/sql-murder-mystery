@@ -1,0 +1,41 @@
+/*select *
+from crime_scene_report
+where date = 20180115
+and city = 'SQL City'
+and type = 'murder';*/
+
+/*select p.name, p.address_street_name, i.transcript from person as p
+inner join interview as i on p.id = i.person_id
+where p.address_street_name = 'Northwestern Dr';*/
+
+/*select p.name, i.transcript from person as p
+inner join interview as i on p.id = i.person_id
+where p.name like 'Annabel%' and address_street_name = 'Franklin Ave'*/
+  
+/*select * from get_fit_now_member
+select * from get_fit_now_check_in*/
+
+/*select membership_id from get_fit_now_check_in
+where membership_id  like '48Z%' and check_in_date = 20180109*/
+
+/*select m.name from get_fit_now_member as m
+join get_fit_now_check_in as c on m.id = c.membership_id
+where c.membership_id like '48Z%'
+and check_in_date = 20180109
+and m.membership_status = 'gold'*/
+
+/*checked one by one lol*/
+
+/*select i.transcript from interview as i
+join person as p on p.id = i.person_id
+where p.name = 'Jeremy Bowers'*/
+
+/*select p.name, d.car_make, d.car_model from person as p
+inner join drivers_license as d on p.license_id = d.id
+inner join facebook_event_checkin as f on p.id = f.person_id
+where gender = 'female'
+and car_make = 'Tesla'
+and d.car_model = 'Model S'
+and d.hair_color = 'red'*/
+
+--MIRANDA PRIESTLY
